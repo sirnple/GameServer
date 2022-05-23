@@ -54,7 +54,7 @@ namespace LeagueSandbox.GameServerConsole
                     // TODO: launch a client for each player in config
                     var startInfo = new ProcessStartInfo(leaguePath)
                     {
-                        Arguments = String.Format("\"8394\" \"LoLLauncher.exe\" \"\" \"127.0.0.1 {0} {1} 1\"",
+                        Arguments = String.Format("\"8394\" \"LoLLauncher.exe\" \"\" \"0.0.0.0 {0} {1} 1\"",
                             parsedArgs.ServerPort, gameServerLauncher.game.Config.Players.First().Value.BlowfishKey),
                         WorkingDirectory = Path.GetDirectoryName(leaguePath)
                     };
